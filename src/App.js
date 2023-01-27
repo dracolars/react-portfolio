@@ -1,22 +1,27 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
 import Home from "./components/Home";
+import Eyemedtron from "./components/Eyemedtron";
+import PageNotFound from "./components/PageNotFound";
+import {
+  BrowserRouter,
+  Routes, //replaces "Switch" used till v5
+  Route,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
-
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <div>
+   <BrowserRouter>
+    <ScrollToTop>
       <Navbar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Work/>
-      <Contact/>
-      {/* Stopped at 36:26 https://www.youtube.com/watch?v=2kg0z1qNrkw  */}
-    </div>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/eyemedtron" element={<Eyemedtron/>} />
+        <Route path="*" element={<PageNotFound/>} />
+      </Routes>
+    </ScrollToTop>
+  </BrowserRouter>
+  
   );
 }
 

@@ -5,6 +5,7 @@
 @layer base{
   body{
     @apply font-light;
+    @apply min-h-[100%];
   }
   li {
     @apply px-4;
@@ -12,17 +13,58 @@
   }
 }
 
+@layer components{
+  p.pagetitle{
+    @apply text-2xl inline border-b-4 border-[#979795];
+  }
+  p.content-title{
+    @apply text-2xl inline border-b-4 border-[#979795] text-right;
+  }
+  div.skillbox{
+    @apply shadow-md shadow-[#c3bdb3] hover:scale-110 duration-500;
+  }
+}
+
+/* HOME PAGE */
+
 .content-div{
   background-repeat: none;
   background-size: cover;
-  background-position: center;
   height: 250px;
 }
 
 .content-div:hover{
   background-image: linear-gradient(
     to right,
-    rgba(112, 157, 255, 0.8),
-    hsla(157, 63%, 79%, 0.8)
+    rgba(227, 227, 213, 0.836),
+    hsla(58, 20%, 71%, 0.8)
   )!important;
 }
+
+input:focus, textarea:focus{
+  border: 2px solid #6a6a68;
+  outline: none;
+}
+
+input, textarea{
+  border: 2px solid #efeeed;
+  outline: none;
+}
+
+/* Inner Pages */
+
+.content-page{
+  background-color: rgb(239 238 237);
+  color: rgb(55 65 81);
+  width: 100%;
+  padding-top: 6em;
+  padding-bottom: 4em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.project-meta{
+  text-align: right;
+  padding-top: 2em;
+}
+
