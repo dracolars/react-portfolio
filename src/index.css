@@ -5,12 +5,10 @@
 @layer base{
   body{
     @apply font-light;
-    @apply min-h-[100%];
+    @apply h-[100vh];
+    @apply bg-[#efeeed];
   }
-  li {
-    @apply px-4;
-    @apply cursor-pointer;
-  }
+  
 }
 
 @layer components{
@@ -22,6 +20,10 @@
   }
   div.skillbox{
     @apply shadow-md shadow-[#c3bdb3] hover:scale-110 duration-500;
+  }
+  div.menu-div li {
+    @apply px-4;
+    @apply cursor-pointer;
   }
 }
 
@@ -54,7 +56,7 @@ input, textarea{
 /* Inner Pages */
 
 .content-page{
-  background-color: rgb(239 238 237);
+
   color: rgb(55 65 81);
   width: 100%;
   padding-top: 6em;
@@ -68,3 +70,6 @@ input, textarea{
   padding-top: 2em;
 }
 
+ul.tech-ul li{
+  padding-bottom: 10px;
+}

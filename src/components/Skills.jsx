@@ -6,6 +6,7 @@ import JavaScript from '../assets/javascript.png'
 import GitHub from '../assets/github.png'
 import AWS from '../assets/aws.png'
 import Node from '../assets/node.png'
+import ReactIcon from '../assets/react-icon.png'
 
 
 
@@ -36,8 +37,8 @@ const Skills = () => {
                     <p className='my-4'>AWS</p>
                 </div>
                 <div className='skillbox'>
-                    <img className="w-20 mx-auto" src={GitHub} alt="HTML Icon"></img>
-                    <p className='my-4'>GitHub</p>
+                    <img className="w-20 mx-auto" src={ReactIcon} alt="HTML Icon"></img>
+                    <p className='my-4'>React</p>
                 </div>
                 <div className='skillbox'>
                     <img className="w-20 mx-auto" src={Node} alt="HTML Icon"></img>
