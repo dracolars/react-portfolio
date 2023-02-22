@@ -2,17 +2,20 @@ import React, {useState} from 'react'
 
 const Contact = () => {
 
-  const[status, setStatus] = useState("Submit");
+  const[status, setStatus] = useState("Ready to send");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus('Sending...')
+
     const {name, email, message} = e.target.elements;
     let details = {
       name: name.value,
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("http://localhost:5000/contact", {
+    
+    let response = await fetch('${window.location.hostname}:5000/contact', {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -20,9 +23,14 @@ const Contact = () => {
       body: JSON.stringify(details),
     });
 
-    setStatus("Let's Collaborate");
     let result = await response.json();
-    alert(result.status);
+    console.log(result.status);
+    if (result.status === "Message Sent") {
+      name.value = "";
+      email.value = ""; 
+      message.value = "";
+      setStatus('Message sent. Thanks!')
+    };
   };
 
   return (
@@ -39,6 +47,7 @@ const Contact = () => {
             <input className='my-4 p-2 bg-[#ffffff]' type="email" placeholder='Email' name="email" id="email" required/>
             <textarea className='bg-[#ffffff] p-2' type="text" placeholder='Message' name="message" id="message" rows='6' required/>
             <button type="submit" className='text-gray-100 bg-[#6a6a68] border-2 hover:bg-[#979795] hover:border-[#ffffff] px-4 py-3 my-8 mx-auto items-center'> Let's Collaborate</button>
+            <p className='text-[#a2a2a2] text-center text-sm'>{status}</p>
         </form>
     </div>
   )
