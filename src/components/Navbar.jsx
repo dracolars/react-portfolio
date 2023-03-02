@@ -10,7 +10,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     const navigate = useNavigate()
-    const scrollTarget = (target) => scroller.scrollTo(target, { smooth: true, duration: 500});
+    const scrollTarget = (target) => scroller.scrollTo(target, {smooth: true, duration: 500});
     
     const scrollToPage = (target) => {
         if (window.location.pathname !== "/") {

@@ -12,7 +12,7 @@ const Intro = () => {
                 <div>
                 </div>
             </div>
-            <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-8 px-4 pt-6'>
+            <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-8 px-4 pt-2'>
                 <div className='flex justify-center items-center'>
                 <img className="sm:w-50 md:w-40 w-40 mx-auto max-h-65" src={AlexPortrait} alt="Portrait"></img>
                 </div>
@@ -23,14 +23,14 @@ const Intro = () => {
                     </p>
                 </div>
             </div>
-            <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-8 px-4 py-6 sm:py-10'>
+            <div className='max-w-[800px] w-full grid sm:grid-cols-2 gap-8 px-4 pt-6 sm:py-10'>
                 <div>
                     <p className='font-[400] sm:text-right'> The technologies and tools that I live by 
                         <span className='font-[200] italic sm:text-right'> (how I spend my time)</span> :
                     </p>
                    
                 </div>
-                <div className='pb-20'>
+                <div className='pb-10 md:pb-0'>
                    <ul className="tech-ul">
                         <li><b>VS Code</b> - The perfect all-in-one code editor. Atom is a good second.</li>
                         <li><b>Photoshop</b> - I dabble in photography and this tool is critical for color correction.</li>
