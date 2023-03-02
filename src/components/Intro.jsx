@@ -30,7 +30,7 @@ const Intro = () => {
                     </p>
                    
                 </div>
-                <div>
+                <div className='pb-20'>
                    <ul className="tech-ul">
                         <li><b>VS Code</b> - The perfect all-in-one code editor. Atom is a good second.</li>
                         <li><b>Photoshop</b> - I dabble in photography and this tool is critical for color correction.</li>

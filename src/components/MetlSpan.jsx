@@ -44,8 +44,9 @@ const GoogleAnalytics = () => {
           <p className='font-semibold pt-2'>Results:</p>
           <p>A great example of UX Design, with proper implementation that dives an increase of conversions, click-to-call and email-to events.</p>
         </div>
-        
-        <div></div>
+        <a href="https://metlspan.com/resources/find-a-rep/" target="_blank" rel="noreferrer">
+          <button className='text-center rounded-lg px-3 py-2 mt-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Demo</button>
+        </a> 
       </div>
 
     </div>

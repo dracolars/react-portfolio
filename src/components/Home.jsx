@@ -5,12 +5,13 @@ import Intro from ".//Intro";
 import Contact from ".//Contact";
 import Skills from ".//Skills";
 import Work from ".//Work";
+import ResumePDF from '../assets/Alex Laris Soft Dev Resume.pdf'
 
 
 const Home = () => {
   return (
 
-    <div name="home" className='w-full h-[90vh] bg-[#efeeed]'>
+    <div name="home" className='w-full h-[95vh] bg-[#efeeed]'>
 
         {/* Container */}
         <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
@@ -25,6 +26,13 @@ const Home = () => {
                   <span className='group-hover:rotate-90 duration-300'> <HiArrowNarrowRight className='ml-3'/>  </span>
                 </button>
                 </Link>
+
+                <a href={ResumePDF} target="_blank" className="inline-block" > 
+                  <button className='text-gray-700 group border-1 border-gray-700 py-2 font-bold flex items-center hover:bg-[#6a6a68] hover:text-[#c8c5b2]'> 
+                    <p className='px-2'>View Resume</p>
+                    <span className='group-hover:rotate-90 duration-300'> <HiArrowNarrowRight className='ml-3'/>  </span> 
+                  </button>
+                </a>
             </div>
         </div>
 
