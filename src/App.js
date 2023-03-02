@@ -8,6 +8,8 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./ScrollToTop";
+import GoogleAnalytics from "./components/GoogleAnalytics";
+import MetlSpan from "./components/MetlSpan";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
       <Navbar/>
       <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route path="/eyemedtron" element={<Eyemedtron/>} />
+        <Route path="/work/eyemedtron" element={<Eyemedtron/>} />
+        <Route path="/work/googleanalytics" element={<GoogleAnalytics/>} />
+        <Route path="/work/metlspan-reps" element={<MetlSpan/>} />
         <Route path="*" element={<PageNotFound/>} />
       </Routes>
     </ScrollToTop>

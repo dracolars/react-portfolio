@@ -20,8 +20,8 @@ const Contact = () => {
         <form id='portfolio-contact' onSubmit={submit} className='flex flex-col max-w-[600px] w-full'>
             <div className='py-4'>
                 <p className='pagetitle'>CONTACT</p>
-                <p className='text-gray-700 py-6'>Submit the form below or shoot me an email - 
-                    <a className='text-decoration-line: underline hover:text-[#979795]' href="mailto: adlaris@uh.edu"> contact@alexdemos.net </a>
+                <p className='text-gray-700 py-6'>Submit the form below or shoot me an email -&nbsp;
+                    <a className='text-decoration-line: underline hover:text-[#979795]' href="mailto:contact@alexdemos.net ">contact@alexdemos.net </a>
                 </p>
             </div>
             <input className='p-2 bg-[#ffffff]' type="text" placeholder='Name' name="name" id="name" required/>
