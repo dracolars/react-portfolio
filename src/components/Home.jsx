@@ -27,7 +27,7 @@ const Home = () => {
                 </button>
                 </Link>
 
-                <a href={ResumePDF} target="_blank" className="inline-block" > 
+                <a href={ResumePDF} target="_blank" rel="noreferrer" className="inline-block" > 
                   <button className='text-gray-700 group border-1 border-gray-700 py-2 font-bold flex items-center hover:bg-[#6a6a68] hover:text-[#c8c5b2]'> 
                     <p className='px-2'>View Resume</p>
                     <span className='group-hover:rotate-90 duration-300'> <HiArrowNarrowRight className='ml-1'/>  </span> 
