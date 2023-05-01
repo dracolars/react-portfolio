@@ -7,12 +7,8 @@ import GA4 from '../assets/GA4-GA4.png'
 
 const GoogleAnalytics = () => {
   return (
-    <div name='title' className='content-page'>
-
-      <div className='text-center m-auto'>
-        <p className='content-title'>Google Analytics Setup and Migration</p>
-      </div>
-
+    <main name='title' className='content-page'>
+      <h1 className='content-title'>Google Analytics Setup and Migration</h1>
       <div className='grid grid-cols-3 place-items-center pt-8 lg:pl-[16em] lg:pr-[16em] overflow-hidden'>
         <div className='p-0 md:p-2'>
           <div className='p-2 bg-[#D9D9D9]'>
@@ -31,14 +27,13 @@ const GoogleAnalytics = () => {
         </div>
       </div>
 
-      <div className='project-meta'>
+      <aside className='project-meta'>
         <p>TopSpot IMS</p>
         <p>2021-2023</p>
-      </div>
+      </aside>
 
-      <div className='xl:px-[4em] xl:py-8'>
+      <article className='xl:px-[4em] xl:py-8'>
         {/* COL 1*/}
-        <div>
           <p className='font-semibold'>Synopsis:</p>
           <p>With the sunsetting of Google Analytics Universal in July 2023, lots of websites using Google software as their analytics platform have a critical need
             to switch to Google's newest app and site analytics, GA4. This new platform aims to move away from the user-based model to an event-based one. 
@@ -56,15 +51,15 @@ const GoogleAnalytics = () => {
           <p className='font-semibold pt-2'>Technologies Used:</p>
           <p>JavaScript, Google Analytics Properties, Google Tag Manager, jQuery</p>
           <p className='font-semibold pt-2'>Results:</p>
-          <p>Over 100 successful GA4 migrations in 2022.</p>
-          <p>For over 50% of migrations, we fixed setup errors and were able to provide accurate leads and SEO reports. </p>
-          <p>Enhanced event accuracy and added new custom events that provided insight as to what is causing visitors to convert. </p>
-        </div>
-        
-        <div></div>
-      </div>
+          <ul>
+          <li>Over 100 successful GA4 migrations in 2022.</li>
+          <li>For over 50% of migrations, we fixed setup errors and were able to provide accurate leads and SEO reports. </li>
+          <li>Enhanced event accuracy and added new custom events that provided insight as to what is causing visitors to convert. </li>
+          </ul>
+          
+      </article>
 
-    </div>
+    </main>
   )
 }
 

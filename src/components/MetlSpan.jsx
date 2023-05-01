@@ -5,24 +5,19 @@ import MetlSpanHero from '../assets/MetlSpanHero.png'
 
 const GoogleAnalytics = () => {
   return (
-    <div name='title' className='content-page'>
-
-      <div className='text-center m-auto'>
-        <p className='content-title'>MetlSpan Representatives Directory</p>
-      </div>
-
-      <div className='pt-8'>
+    <main name='title' className='content-page'>
+      <h1 className='content-title'>MetlSpan Representatives Directory</h1>
+      <figure className='pt-8'>
               <img className="image-hero" src={MetlSpanHero} alt="MetlSpan Find a Representative Page Screenshot"/>
-      </div>
+      </figure>
 
-      <div className='project-meta'>
+      <aside className='project-meta'>
         <p>TopSpot IMS</p>
         <p>2022</p>
-      </div>
+      </aside>
 
-      <div className='xl:px-[4em] xl:py-8'>
+      <article className='xl:px-[4em] xl:py-8'>
         {/* COL 1*/}
-        <div>
           <p className='font-semibold'>Synopsis:</p>
           <p>MetlSpan's new website needed a way for users to come into contact with the correct representative that served their project and area. My team and I came up with the design
             while I took charge of the database implementation, code, and map visualization. This way, when a user inputs what kind of project and in what country, state, or city, the correct list of 
@@ -43,13 +38,12 @@ const GoogleAnalytics = () => {
 
           <p className='font-semibold pt-2'>Results:</p>
           <p>A great example of UX Design, with proper implementation that dives an increase of conversions, click-to-call and email-to events.</p>
-        </div>
-        <a href="https://metlspan.com/resources/find-a-rep/" target="_blank" rel="noreferrer">
+          <a href="https://metlspan.com/resources/find-a-rep/" target="_blank" rel="noreferrer">
           <button className='text-center rounded-lg px-3 py-2 mt-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Demo</button>
-        </a> 
-      </div>
+          </a> 
+      </article>
 
-    </div>
+    </main>
   )
 }
 

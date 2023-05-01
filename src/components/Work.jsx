@@ -7,13 +7,11 @@ import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
-    <div name="work" className='w-full md:h-screen text-gray-700 bg-[#efeeed]'>
+    <section name="work" className='w-full md:h-screen'>
         {/* Container */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-              <div className='pb-8 py-16'>
-                <p className='pagetitle'>WORK</p>
-                <p className='py-6'>Check some of my recent work</p>
-            </div>
+                <h2 className='pagetitle'>WORK</h2>
+                <p className='mx-auto my-4 pb-4'>Check some of my recent work</p>
 
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 pb-6'>
@@ -77,7 +75,7 @@ const Work = () => {
 
 
         </div>
-    </div>
+    </section>
   )
 }
 

@@ -6,7 +6,9 @@ import {scroller} from 'react-scroll';
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-    const[nav, setNav] = useState(false)
+    const[nav, setNav] = useState(false);
+    const[color, setColor] = useState("dark");
+    let body = document.body;
     const handleClick = () => setNav(!nav)
 
     const navigate = useNavigate()
@@ -24,16 +26,27 @@ const Navbar = () => {
             scrollTarget(target);
         }, 100);
     }
+
+    const handleColorChange = (e) => {
+        if(color === "light"){
+            e.target.innerHTML = "dark mode";
+            setColor("dark");
+            body.classList.add("dark");
+        }
+        else if(color === "dark"){
+            e.target.innerHTML = "light mode";
+            setColor("light");
+            body.classList.remove("dark");
+        }
+    }
+
+
   return (
-    <div className="fixed w-full h-[60px] flex justify-between items-center px-4 bg-[#f5f4f3] text-gray-700 z-10">
-        <div>
-            <div onClick={() => scrollToPage('home')}>
-                <img className="bg-[#f5f4f3] hover:bg-[#ffffff]" title="Home" src={Logo} alt="Logo" style={{width: '90px'}}/>
-            </div>
-        </div>
+    <header id="header" className="fixed w-full h-[60px] flex justify-between items-center px-4 z-10">
+                <img id="logo" onClick={() => scrollToPage('home')} className="cursor-pointer" title="Home" src={Logo} alt="Alex Laris Logo" style={{width: '90px'}}/>
 
         {/* Menu */}
-        <div className="menu-div">
+        <nav className="menu-div">
             <ul className='hidden md:flex'>
                 <li>
                     <div onClick={() => scrollToPage('home')}>
@@ -64,12 +77,11 @@ const Navbar = () => {
         
 
             {/* Hamburger */}
-            <div onClick={handleClick} className='md:hidden z-10'>
+            <div onClick={handleClick} className='md:hidden z-10 fixed right-0 top-0 p-5 hover:cursor-pointer'>
                 {!nav ? <FaBars /> : <FaTimes/>}
-
             </div>
             {/* Mobile Menu */}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#f5f4f3] flex flex-col justify-center items-center'}>
+            <ul id="mobile-menu" className={!nav ? 'hidden' : 'fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center md:hidden'}>
                 <li className='py-6 text-3xl'><div onClick={() => scrollToPage('home')}>
                     HOME
                 </div></li>
@@ -101,14 +113,18 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#8a8a87] hover:bg-[#6a6a68]'>
-                        <a className='flex justify-between items-center w-full text-gray-200' href='mailto:adlaris@uh.edu' target="_blank" rel="noopener noreferrer">
+                        <a className='flex justify-between items-center w-full text-gray-200' href='mailto:contact@alexdemos.net' target="_blank" rel="noopener noreferrer">
                             Email <HiOutlineMail size={30}/>
                         </a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </div>
+
+            <div className='lg:flex fixed flex-col top-[70px] left-[1%] hover:cursor-pointer'>
+                <p id="color-mode" onClick={handleColorChange} className='text-xs font-bold py-2 px-4'>dark mode</p>
+            </div>
+        </nav>
+    </header>
   )
 }
 
