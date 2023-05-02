@@ -1,7 +1,9 @@
-import React from 'react'
-import EyemedCover3 from '../assets/EyemedCover9.png'
-import GA4 from '../assets/GACover2.png'
-import MetlSpan from '../assets/MetlSpanCover2.png'
+import React from 'react';
+import EyemedCover3 from '../assets/EyemedCover9.png';
+import GA4 from '../assets/GACover2.png';
+import MetlSpan from '../assets/MetlSpanCover2.png';
+import Spootify from '../assets/Spootify-Cover.png';
+import PianoPlayer from '../assets/Piano-player-Cover.png';
 import { Link } from "react-router-dom";
 
 
@@ -16,26 +18,58 @@ const Work = () => {
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 pb-6'>
 
-                <div style={{backgroundImage: `url(${EyemedCover3})`}}  className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    {/* hover effects */}
-                    <div className='opacity-0 group-hover:opacity-100 text-center'>
-                        <span className='work-cover-text'>
-                            Online Insurance Automation System
-                        </span>
-
-                        <div className='pt-8 text-center'>
-                            <Link to="/work/eyemedtron">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Details</button>
-                            </Link> 
-                            <a href='https://github.com/dracolars/eyemed-autoclaim/blob/main/main.py' target="_blank" rel="noreferrer">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Code</button>
-                            </a>
-                        </div>
-
+            <div style={{backgroundImage: `url(${Spootify})`}}  className='shadow-lg shadow-[#040c16] group container rounded-sm flex justify-center items-center mx-auto content-div'>
+                {/* hover effects */}
+                <div className='opacity-0 group-hover:opacity-100 text-center'>
+                    <span className='work-cover-text'>
+                        Spotify Playlist Builder (React Front-End Project)
+                    </span>
+                    <div className='pt-8 text-center'>
+                        <Link to="#">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Demo</button>
+                        </Link> 
+                        <a href='https://github.com/dracolars/Spootify-API' target="_blank" rel="noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Code</button>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <div style={{backgroundImage: `url(${GA4})`}}  className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+            <div style={{backgroundImage: `url(${PianoPlayer})`}}  className='shadow-lg shadow-[#040c16] group container rounded-sm flex justify-center items-center mx-auto content-div'>
+                {/* hover effects */}
+                <div className='opacity-0 group-hover:opacity-100 text-center'>
+                    <span className='work-cover-text'>
+                        JS Piano Player
+                    </span>
+                    <div className='pt-8 text-center'>
+                        <a href="https://dracolars.github.io/piano-player-js/" target="_blank" rel="noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Demo</button>
+                        </a> 
+                        <a href='https://github.com/dracolars/piano-player-js' target="_blank" rel="noreferrer">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style={{backgroundImage: `url(${EyemedCover3})`}}  className='shadow-lg shadow-[#040c16] group container rounded-sm flex justify-center items-center mx-auto content-div'>
+                {/* hover effects */}
+                <div className='opacity-0 group-hover:opacity-100 text-center'>
+                    <span className='work-cover-text'>
+                        Online Insurance Automation System
+                    </span>
+                    <div className='pt-8 text-center'>
+                        <Link to="/work/eyemedtron">
+                            <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Details</button>
+                        </Link> 
+                        <a href='https://github.com/dracolars/eyemed-autoclaim/blob/main/main.py' target="_blank" rel="noreferrer">
+                          <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg hover:bg-black hover:text-white'>Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+                <div style={{backgroundImage: `url(${GA4})`}}  className='shadow-lg shadow-[#040c16] group container rounded-sm flex justify-center items-center mx-auto content-div'>
                     {/* hover effects */}
                     <div className='opacity-0 group-hover:opacity-100 text-center'>
                         <span className='work-cover-text'>
@@ -52,7 +86,7 @@ const Work = () => {
                     </div>
                 </div>
 
-                <div style={{backgroundImage: `url(${MetlSpan})`}}  className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                <div style={{backgroundImage: `url(${MetlSpan})`}}  className='shadow-lg shadow-[#040c16] group container rounded-sm flex justify-center items-center mx-auto content-div'>
                     {/* hover effects */}
                     <div className='opacity-0 group-hover:opacity-100 text-center'>
                         <span className='work-cover-text'>

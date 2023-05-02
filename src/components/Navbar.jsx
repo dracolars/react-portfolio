@@ -98,9 +98,10 @@ const Navbar = () => {
                     CONTACT
                 </div></li>
             </ul>
+        </nav>
 
             {/* Social Icons */}
-            <div className='hidden lg:flex fixed flex-col top-[75%] left-0'>
+            <div id="social-links" className='hidden lg:flex fixed flex-col top-[75%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#979795] hover:bg-[#6a6a68]'>
                         <a className='flex justify-between items-center w-full text-gray-200' href='https://linkedin.com/in/alex-laris' target="_blank" rel="noopener noreferrer">
@@ -123,7 +124,6 @@ const Navbar = () => {
             <div className='lg:flex fixed flex-col top-[70px] left-[1%] hover:cursor-pointer'>
                 <p id="color-mode" onClick={handleColorChange} className='text-xs font-bold py-2 px-4'>dark mode</p>
             </div>
-        </nav>
     </header>
   )
 }

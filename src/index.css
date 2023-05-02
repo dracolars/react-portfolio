@@ -21,7 +21,7 @@
   .skillbox {
     @apply shadow-md shadow-[#c3bdb3] hover:scale-110 duration-500;
   }
-  .menu-div li {
+  #social-links li {
     @apply px-4;
     @apply cursor-pointer;
   }
@@ -40,10 +40,12 @@ header {
 #color-mode {
   background-color: #f5f4f3;
 }
-nav li {
+nav.menu-div li {
+  padding-right: 30px;
+  cursor: pointer;
   transition: all 0.5s;
 }
-nav li:hover {
+nav.menu-div li:hover {
   transform: scale(1.2);
   transition: all 0.5s;
 }
@@ -79,9 +81,9 @@ textarea {
 }
 
 .work-cover-text {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 1em;
+  font-weight: 600;
   letter-spacing: 0.05em;
   color: rgb(255, 255, 255);
   padding-left: 0.5em;
@@ -108,6 +110,10 @@ textarea {
 
 ul.tech-ul li {
   padding-bottom: 10px;
+}
+
+ul.tech-ul b {
+  font-weight: 700;
 }
 
 .image-hero {
@@ -141,4 +147,11 @@ ul.tech-ul li {
 
 .dark .skillbox {
   box-shadow: 0 2px #d1cbc0;
+}
+.dark .content-div:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 247, 0.9),
+    hsla(57, 40%, 90%, 0.5)
+  ) !important;
 }
