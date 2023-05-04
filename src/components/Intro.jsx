@@ -3,7 +3,7 @@ import AlexPortrait from '../assets/IMG_5633-Edited-Final.jpg'
 
 const Intro = () => {
   return (
-    <section name='intro' className='w-full h-screen'>
+    <section name='intro' className='page'>
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <h2 className='pagetitle'>INTRO</h2>
             <section className='max-w-[800px] w-full grid sm:grid-cols-2 gap-8 px-4 pt-2'>

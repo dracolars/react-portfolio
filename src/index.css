@@ -155,3 +155,15 @@ ul.tech-ul b {
     hsla(57, 40%, 90%, 0.5)
   ) !important;
 }
+
+section.page {
+  height: 100vh;
+  min-height: 700px;
+}
+
+@media screen and (max-width: 752px) {
+  section.big-page {
+    height: 110vh;
+    min-height: 1100px;
+  }
+}

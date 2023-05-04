@@ -42,7 +42,7 @@ const Navbar = () => {
 
 
   return (
-    <header id="header" className="fixed w-full h-[60px] flex justify-between items-center px-4 z-10">
+    <header id="header" className="fixed top-0 w-full h-[60px] flex justify-between items-center px-4 z-10">
                 <img id="logo" onClick={() => scrollToPage('home')} className="cursor-pointer" title="Home" src={Logo} alt="Alex Laris Logo" style={{width: '90px'}}/>
 
         {/* Menu */}
