@@ -1,21 +1,23 @@
 import React from 'react';
-import EyemedCover3 from '../assets/EyemedCover9.png';
-import GA4 from '../assets/GACover2.png';
-import MetlSpan from '../assets/MetlSpanCover2.png';
-import Spootify from '../assets/Spootify-Cover.png';
-import PianoPlayer from '../assets/Piano-player-Cover.png';
 import { Link } from "react-router-dom";
+import EyemedCover3 from '../../assets/EyemedCover9.png';
+import GA4 from '../../assets/GACover2.png';
+import MetlSpan from '../../assets/MetlSpanCover2.png';
+import Spootify from '../../assets/Spootify-Cover.png';
+import PianoPlayer from '../../assets/Piano-player-Cover.png';
+import { Fade } from 'react-reveal';
 
 
-const Work = () => {
+
+const Projects = () => {
   return (
-    <section name="work" className='page big-page'>
+    <section name="projects" className='page large-page'>
         {/* Container */}
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-            <h2 className='pagetitle'>WORK</h2>
-            <p className='mx-auto my-4 pb-4'>Check some of my recent work</p>
+            <h2 className='pagetitle'>PROJECTS</h2>
+            <p className='mx-auto my-4 pb-4'>Projects developed for learning or business purposes</p>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 pb-6'>
-
+                <Fade bottom>
                 <div style={{backgroundImage: `url(${Spootify})`}}  className='shadow-lg shadow-[#040c16] group container rounded-sm flex justify-center items-center mx-auto content-div'>
                     {/* hover effects */}
                     <div className='opacity-0 group-hover:opacity-100 text-center'>
@@ -84,7 +86,7 @@ const Work = () => {
                         </div>
                     </div>
 
-                    <div style={{backgroundImage: `url(${MetlSpan})`}}  className='hidden md:block shadow-lg shadow-[#040c16] group container rounded-sm flex justify-center items-center mx-auto content-div'>
+                    <div style={{backgroundImage: `url(${MetlSpan})`}}  className='hidden md:flex shadow-lg shadow-[#040c16] group container rounded-sm justify-center items-center mx-auto content-div'>
                         {/* hover effects */}
                         <div className='opacity-0 group-hover:opacity-100 text-center'>
                             <span className='work-cover-text'>
@@ -102,11 +104,11 @@ const Work = () => {
                         </div>
                     </div>
 
-
+                    </Fade>
                 </div>
             </div>
     </section>
   )
 }
 
-export default Work
+export default Projects

@@ -13,7 +13,7 @@
 
 @layer components {
   .pagetitle {
-    @apply text-2xl border-b-4 border-[#979795] mx-auto max-w-[110px] my-2;
+    @apply text-2xl border-b-4 border-[#979795] mx-auto max-w-[110px] my-2 pt-8;
   }
   .content-title {
     @apply text-2xl block border-b-4 border-[#979795] text-center mx-auto max-w-[300px];
@@ -162,8 +162,87 @@ section.page {
 }
 
 @media screen and (max-width: 752px) {
-  section.big-page {
+  section.large-page {
     height: 110vh;
-    min-height: 1100px;
+    min-height: 1200px;
   }
+
+  section.extra-large-page {
+    height: 120vh;
+    min-height: 1350px;
+  }
+}
+
+.work-tile {
+  margin: 1.5em 0;
+  padding: 0.5em 0.5em;
+  color: #374151;
+  background-color: #efeeed;
+}
+
+.work-tile .job-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+  .work-tile .job-title {
+    display: block;
+    text-align: left;
+  }
+}
+
+.work-tile h3 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.work-tile p.tech {
+  margin-right: 8px;
+  margin-top: 4px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  word-wrap: none;
+  font-size: 0.85em;
+  font-weight: 400;
+  background-color: #bebeba;
+  color: #374151;
+  cursor: default;
+}
+
+.work-tile p.tech:hover {
+  background-color: #dcdcd6;
+}
+
+.work-tile .divider {
+  padding-top: 20px;
+  border-bottom: 1px #bebeba solid;
+}
+
+.dark .work-tile {
+  color: #d1cbc0;
+  background-color: #1b1b1b;
+}
+
+.dark .work-tile h3,
+.dark .work-tile b,
+.dark .work-tile i {
+  color: #ddd;
+  background-color: #1b1b1b;
+}
+
+.contact-links a {
+  color: #374151;
+}
+
+.dark .contact-links a {
+  color: #bebeba;
+}
+
+.contact-links a:hover {
+  color: #847353;
+}
+
+.dark .contact-links a:hover {
+  color: #ffffff;
 }

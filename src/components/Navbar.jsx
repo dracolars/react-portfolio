@@ -59,13 +59,13 @@ const Navbar = () => {
                     </div>
                 </li>
                 <li>
-                    <div onClick={() => scrollToPage('skills')}>
-                        SKILLS
+                    <div onClick={() => scrollToPage('work')}>
+                        WORK
                     </div>
                 </li>
                 <li>
-                    <div onClick={() => scrollToPage('work')}>
-                        WORK
+                    <div onClick={() => scrollToPage('projects')}>
+                        PROJECTS
                     </div>
                 </li>
                 <li>
@@ -88,11 +88,11 @@ const Navbar = () => {
                 <li className='py-6 text-3xl'><div onClick={() => scrollToPage('intro')}>
                     INTRO
                 </div></li>
-                <li className='py-6 text-3xl'><div onClick={() => scrollToPage('skills')}>
-                    SKILLS
-                </div></li>
                 <li className='py-6 text-3xl'><div onClick={() => scrollToPage('work')}>
                     WORK
+                </div></li>
+                <li className='py-6 text-3xl'><div onClick={() => scrollToPage('projects')}>
+                    PROJECTS
                 </div></li>
                 <li className='py-6 text-3xl'><div onClick={() => scrollToPage('contact')}>
                     CONTACT
