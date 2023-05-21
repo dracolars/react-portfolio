@@ -13,7 +13,7 @@
 
 @layer components {
   .pagetitle {
-    @apply text-2xl border-b-4 border-[#979795] mx-auto max-w-[110px] my-2 pt-8;
+    @apply text-2xl border-b-4 border-[#979795] mx-auto max-w-[110px] my-4 pt-8;
   }
   .content-title {
     @apply text-2xl block border-b-4 border-[#979795] text-center mx-auto max-w-[300px];
@@ -41,13 +41,19 @@ header {
   background-color: #f5f4f3;
 }
 nav.menu-div li {
+  font-weight: 400;
   padding-right: 30px;
   cursor: pointer;
   transition: all 0.5s;
 }
 nav.menu-div li:hover {
-  transform: scale(1.2);
   transition: all 0.5s;
+  text-shadow: 1px 1px 20px #9b7805;
+}
+
+.dark nav.menu-div li:hover {
+  transition: all 0.5s;
+  text-shadow: 1px 1px 20px white;
 }
 
 /* HOME PAGE */
@@ -130,6 +136,7 @@ ul.tech-ul b {
   background-color: #1b1b1b;
   color: #d1cbc0;
 }
+
 .dark #mobile-menu,
 .dark #header {
   background-color: #141414;
@@ -143,6 +150,10 @@ ul.tech-ul b {
 
 .dark #color-mode {
   background-color: #141414;
+}
+
+.dark .content-page {
+  color: #d1cbc0;
 }
 
 .dark .skillbox {
@@ -168,13 +179,13 @@ section.page {
   }
 
   section.extra-large-page {
-    height: 120vh;
-    min-height: 1350px;
+    height: 125vh;
+    min-height: 1450px;
   }
 }
 
 .work-tile {
-  margin: 1.5em 0;
+  margin: 0.6em 0;
   padding: 0.5em 0.5em;
   color: #374151;
   background-color: #efeeed;
@@ -217,6 +228,22 @@ section.page {
 .work-tile .divider {
   padding-top: 20px;
   border-bottom: 1px #bebeba solid;
+}
+
+.project-button {
+  background-color: #efeeed;
+  color: #374151;
+  font-size: 1em;
+  font-weight: 800;
+  border-radius: 10px;
+  padding: 0.65em 0.75em;
+  margin: 0 0.25em;
+  letter-spacing: 1px;
+}
+
+.project-button:hover {
+  background-color: black;
+  color: white;
 }
 
 .dark .work-tile {

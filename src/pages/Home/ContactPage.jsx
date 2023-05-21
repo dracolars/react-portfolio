@@ -24,7 +24,7 @@ const Contact = () => {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="text-center">
           <h2 className="pagetitle">CONTACT</h2>
-          <p className="pt-12"> I am available for Software Development opportunities.</p>
+          <p className="pt-6"> I am available for Software Development opportunities.</p>
         </div>
         <form
           id="portfolio-contact"
