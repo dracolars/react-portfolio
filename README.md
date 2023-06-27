@@ -8,5 +8,5 @@ Live demo: [www.alexdemos.net](https://www.alexdemos.net)
 Passionate junior developer with a mind full of curiosity. My experience includes Web Development, Data Analytics, and Optometry.
 This portfolio showcases some of my work in the industry, projects, values, hobbies, and ways to contact me.
 
-Created with ReactJS, JavaScript, Netlify, and Git.
+Created with React, JavaScript, Netlify, and Git.
 Alex Laris
