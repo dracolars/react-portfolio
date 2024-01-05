@@ -12,8 +12,7 @@ const Intro = () => {
                 </div>
                 <div>
                     <h3 className='text-3xl py-2'>Hi I am Alex. Nice to meet you. Take a look around.</h3>
-                    <p>I am passionate about building inclusive software solutions that
-                        help others improve healthcare, education, and entrepreneurial fields. My expertise includes analytics for industrial clients, creating app demos, automating patient claims in the healthcare industry, and more. 
+                    <p>I am passionate about creating intuitive software solutions in healthcare, education, and entrepreneurial fields. My expertise includes developing data pipelines, data modeling, business intelligence, and automation in the healthcare industry.
                     </p>
                 </div>
             </section>
@@ -25,9 +24,9 @@ const Intro = () => {
                 </div>
                 <div className='pb-10 md:pb-0'>
                    <ul className="tech-ul">
-                        <li><b>VS Code</b> - The perfect all-in-one code editor. Atom is a good second.</li>
+                        <li><b>VS Code</b> - The perfect all-in-one code editor for programming and web applications.</li>
                         <li><b>Notion</b> - Habit trackers and personal organization.</li>
-                        <li><b>TikTok</b> - Great source of entertainment, tutorials, and recipes.</li>
+                        <li><b>Power BI</b> - Custom data visualizations that drive business intelligence and Analysis.</li>
                         <li><b>Codecademy</b> - Amazing source for learning programming languages and keeping you accountable for your progress.</li>
                    </ul>
                 </div>

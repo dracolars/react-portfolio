@@ -17,10 +17,10 @@ const Home = () => {
             sequence={['Hi my name is', 2000, 'Hi', 2000, 'Hi my name is']} speed={50} style={{color: '#c9c5b2'}} repeat={5} />
           <h1 className="text-4xl sm:text-6xl text-[#c3bdb3] px-3">ALEX LARIS</h1>
           <h2 className="text-xl sm:text-4xl text-[#979795] px-3">
-            Full Stack Developer
+            Data Engineer & Developer
           </h2>
           <p className="max-w[600px] p-3">
-            Passionate junior developer with a mind full of curiosity. My experience includes Web Development, Data Analytics, and Optometry.
+            My experience includes Programming, Data Engineering, Analytics, and Healthcare.
           </p>
             <button className="w-[200px] group border-1 rounded-md border-gray-700 py-2 px-1 font-bold flex items-center hover:bg-[#6a6a68] hover:text-[#c8c5b2]">
               <Link

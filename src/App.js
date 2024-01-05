@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./ScrollToTop";
 import GoogleAnalytics from "./pages/GoogleAnalyticsPage";
 import MetlSpan from "./pages/MetlSpanPage";
+import PowerBI from "./pages/PowerBI";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/work/eyemedtron" element={<Eyemedtron />} />
           <Route path="/work/googleanalytics" element={<GoogleAnalytics />} />
           <Route path="/work/metlspan-reps" element={<MetlSpan />} />
+          <Route path="/work/powerbi" element={<PowerBI />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </ScrollToTop>
