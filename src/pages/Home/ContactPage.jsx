@@ -97,7 +97,7 @@ const Contact = () => {
             <li>
               <a
                 className="flex justify-between items-center w-full px-4"
-                href="mailto:contact@alexdemos.net"
+                href="mailto:contact@alexlaris.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
